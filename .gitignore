@@ -1,10 +1,4 @@
-**/node_modules
-**/*~
-dist
-package-lock.json
-**/*solved*
-!telemetry.config.json
-/public/*.js
+@ -8,3 +8,15 @@ package-lock.json
 /public/*.html
 test/vtl/__tests__
 test/vtl/__mocks__
