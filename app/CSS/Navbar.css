@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 10px 10px 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: .5px solid black;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #cccccc;
+  color: black;
+  border-radius: 4px;
+  max-width: 500px; /* or any width that suits your layout */
+}
+
+.search-bar .search-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: rgb(188, 188, 188);
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-section .login-button {
+  padding: 8px 16px;
+  background-color: rgb(230, 230, 230);
+  border: none;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar .dice-button {
+  padding: 8px 16px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 4px;
+  margin-left: 8px; /* Add right margin to create gap */
+}
+
+.search-bar .dice-button:hover {
+  background-color: rgb(237, 237, 237);
+}

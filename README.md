@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+> ## WikiXplorer [Temp name]
+Authors: Ankit Grover, Prijun Koirala, David Puustinen and Morris Schüssler
 
-## Getting Started
+The main idea of the application is to create a richer wrapper for wikipedia that gives the user insight in how the articles are linked and how the internal linking has been interacted with by the user. We plan to build other functionality on top of this in order to further enhance the insigeht that the user gets.
+This is the final project for the course DH2642 Interaction Programming and the Dynamic Web given at KTH during the spring of 2024.
 
-First, run the development server:
+## Getting started
 
-```bash
-npm run dev
-# or
+## Running
+To run the development server:
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+
+## Wikipedia
+In order to access Wikipedia's API you need to create an application in their developer dashboard. Upon creating the app you will gain access to the client id and -secret that you can use to access the Wikimedia API. Put these in the .env and don't share them!
+
+## Authentication / LogIN
+TODO
+
+## Deploying
+The recommended way to deploy is on Vercel. For more information on how to deploy see https://nextjs.org/docs/deployment.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Stack
 
-## Learn More
+### NextJS
+This project is using NextJS. For more information on features and such see their documentation.
 
-To learn more about Next.js, take a look at the following resources:
+### Yarn
+Install Yarn by following the instructions on their website.
+Since this project is using Plug'n'Play an editor SDK is required for TypeScript intellisense to work. For instruction on how to do that see the documentation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tailwind CSS
+The project uses Tailwind CSS for styling. For more information and documentation see the documentation.
+Also make sure that you have the recommended plugins installed.
+An explanation of the different components can be seen below.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Material UI 
+Material UI is used to create UI functionality for react compoenents. Default font set is Roboto.

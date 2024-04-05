@@ -1,0 +1,10 @@
+.main-container {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow-y: auto;
+  height: 100vh; /* Adjust this as needed */
+}
