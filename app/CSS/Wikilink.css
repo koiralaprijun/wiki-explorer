@@ -1,0 +1,10 @@
+.hover-popup {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    max-width: 400px;
+    padding:15px 20px;
+}
+
+

@@ -1,26 +1,28 @@
-import { Suspense } from "react";
-import SearchResultsFallback from "@/app/components/SearchResultsFallback";
-import ResultList from "@/app/components/ResultList";
+import type { Metadata } from "next";
+import { Search } from "@/app/components/SearchPresenter";
 
-const SearchResults = ({
+type SearchParameters = {
+    query?: string;
+};
+
+export async function generateMetadata({
+    searchParams,
+}: {
+    searchParams: SearchParameters;
+}): Promise<Metadata> {
+    const title = '"' + searchParams?.query + '"' || "Search";
+
+    return {
+        title: title,
+    };
+}
+
+export default function SearchPage({
     searchParams,
 }: {
     searchParams?: { query?: string };
-}) => {
+}) {
     const query = searchParams?.query || "";
 
-    return (
-        <div>
-            <div className="p-4 text-5xl my-2 text-slate-800">
-                Search Results
-            </div>
-            <div className="p-4 my-5 bg-sky-800 text-black text-xl ">
-                <Suspense fallback={<SearchResultsFallback />}>
-                    <ResultList query={query} />
-                </Suspense>
-            </div>
-        </div>
-    );
-};
-
-export default SearchResults;
+    return <Search query={query} />;
+}
