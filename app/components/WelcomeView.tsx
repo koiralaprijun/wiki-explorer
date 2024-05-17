@@ -3,28 +3,15 @@
 import React from "react"
 import { Container, Typography } from "@mui/material"
 import { SearchBoxView } from "@/app/components/SearchBoxView"
-import { globalThemeMUI } from "@/app/components/globalThemeMUI"
+import {globalThemeMUI} from "@/app/components/globalThemeMUI";
 
 export default function WelcomeView() {
   return (
-    <Container sx={{ textAlign: "left", mt: 6, fontSize: "1.2rem" }}>
+    <Container  sx={{ textAlign: "left", mt: 6, fontSize: "1.2rem" }}>
       <Typography variant="h5" component="h1" gutterBottom sx={{ fontWeight: "light", fontSize: "1.8rem" }}>
         Welcome To
       </Typography>
-      <Typography
-        variant="h1"
-        component="h1"
-        sx={{
-          color: "white",
-          backgroundColor: globalThemeMUI.palette.primary.main,
-          display: "inline-block",
-          padding: "15px 20px",
-          borderRadius: "5px",
-          fontWeight: "bolder",
-          mb: 1,
-          fontSize: "4rem"
-        }}
-      >
+      <Typography variant="h1" component="h1" sx={{color:"white", backgroundColor: globalThemeMUI.palette.primary.main, display: "inline-block", padding:"15px 20px", borderRadius: "5px", fontWeight: "bolder", mb: 1, fontSize: "4rem" }}>
         WIKI EXPLORER
       </Typography>
       <Typography variant="body1" sx={{ mb: 4, maxWidth: "70%", fontSize: "1.2rem" }}>
