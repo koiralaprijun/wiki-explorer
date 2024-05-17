@@ -4,7 +4,7 @@ const nextConfig = {
         return [
             {
                 source: "/",
-                destination: "/wiki/Earth",
+                destination: "/welcome",
                 permanent: true,
             },
         ];
